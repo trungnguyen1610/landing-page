@@ -1,0 +1,22 @@
+.partner-content {
+  .item-owl {
+    a {
+      img {
+        filter: grayscale(1) brightness(0%) !important;
+        opacity: 0.8;
+        transform: scale(1) translate(0, 0);
+        transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+        &:hover{
+            filter: grayscale(0) !important;
+            transform: scale(1) translate(0, 0px);
+            transition: all 0.35s ease-in-out;
+          }
+      }
+     
+    }
+  }
+}

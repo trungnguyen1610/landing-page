@@ -1,0 +1,40 @@
+.whattheysay {
+  padding: 20px 0 30px;
+}
+
+.hocvien_desc {
+  display: none;
+  width: 450px;
+  max-width: 100%;
+  padding: 25px 30px;
+  border: solid 1px #ddd;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.15);
+  margin: 20px auto 0 auto;
+  position: relative;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -o-border-radius: 10px;
+  -ms-border-radius: 10px;
+  &.block {
+    display: block;
+  }
+  > p {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+  }
+  .name {
+    font-weight: bold;
+    text-align: right;
+    p:nth-child(1) {
+      font-size: 15px;
+    }
+    p:nth-child(2) {
+      font-weight: $fw-0;
+    }
+  }
+}

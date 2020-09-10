@@ -1,0 +1,69 @@
+.advise {
+  padding: 20px 0 30px;
+  background: linear-gradient(to right, #185b8c, #09305d);
+  .title {
+    h2 {
+      color: $color-white-0;
+      span {
+        &:before {
+          background: $color-white-0;
+        }
+      }
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+    #fname {
+      grid-column: 1 / span 2;
+    }
+    #phone {
+      grid-column: 3 / span 2;
+    }
+    #country {
+      grid-column: 1 / span 2;
+    }
+    #service {
+      grid-column: 3 / span 2;
+    }
+    input,
+    select {
+      height: 45px;
+      padding: 0 5px;
+    }
+    .read-more {
+        grid-column: 2 / span 2;
+        a {
+            padding: 10px 40px;
+          }
+      }
+  }
+}
+@include responsive("small") {
+    .advise{
+        form {
+            #fname {
+              grid-column: 1 / span 4;
+            }
+            #phone {
+              grid-column: 1 / span 4;
+            }
+        }
+    }
+   
+  }
+  @include responsive("medium") {
+    .advise{
+        form {
+            #fname {
+              grid-column: 1 / span 4;
+            }
+            #phone {
+              grid-column: 1 / span 4;
+            }
+        }
+    }
+   
+  }

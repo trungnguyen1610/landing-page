@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+}
+html{
+    font-size: 14px;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: $fs-0;
+    line-height: $line-height-0;
+    color: $color-black-light;
+    background-color: $color-white-0;
+}
+input,select{
+        border-radius:0;
+        border: 1px solid black;
+}
+input:focus{
+        border-radius:0;
+        outline: none;
+}
+select:focus{
+    border-radius:0;
+    outline: none;
+}

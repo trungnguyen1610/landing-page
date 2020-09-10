@@ -1,0 +1,48 @@
+.intro-right {
+  margin-bottom: 25px;
+  padding-left: 50px;
+  i {
+    font-size: $fs-3;
+    color: $color-red-1;
+    margin-right: $mg-1;
+  }
+}
+.intro-right__item--content {
+  h4 {
+    color: $color-blue-1;
+    font-weight: $fw-2;
+    font-size: 18px;
+    margin-top: 0;
+  }
+  p {
+    font-size: 14px;
+    color: $color-gray-0;
+    line-height: 1.5;
+    margin-bottom: $mg-1;
+    text-align: justify;
+  }
+}
+@include responsive("small") {
+    .intro{
+        .title{
+            h2{
+                padding: 0;
+                margin-top: 0;
+            }
+        }
+    }
+  }
+
+@include responsive("medium") {
+    .intro{
+        .title{
+            h2{
+                margin-top: 0;
+            }
+        }
+        .intro-right{
+            padding-left: 0;
+            margin: 25px 0;
+        }
+    }
+  }

@@ -1,0 +1,48 @@
+p{
+    margin : 0 0 10px;
+}
+h2,h3{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+h4,h5{
+    margin-bottom: 10px;
+}
+.title {
+    padding: 30px 0 20px 0;
+    h2  {
+        color: #2c3b6d;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px 0 35px;
+        span {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                height: 2px;
+                width: 60%;
+                left: 50%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
+                bottom: -10px;
+                background: #c4272e;
+                -moz-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                -o-transform: translateX(-50%);
+            }
+        }
+       
+    }
+}
+
+.read-more{
+    margin: 10px auto;
+}
+@include responsive("small") {
+      .title{
+        h2{
+          font-size: 1.5rem;
+        }
+      }
+    }

@@ -1,0 +1,31 @@
+.procedure-image{
+    margin: 50px auto;
+    width: 90%;
+}
+@include responsive("small") {
+   .procedure{
+       .title{
+           padding: 0;
+           h2{
+               padding: 0;
+           }
+       }
+       .procedure-image{
+           width: 100%;
+       }
+   }
+  }
+
+@include responsive("medium") {
+    .procedure{
+        .title{
+            padding: 0;
+            h2{
+                padding: 0;
+            }
+        }
+        .procedure-image{
+            width: 100%;
+        }
+    }
+  }

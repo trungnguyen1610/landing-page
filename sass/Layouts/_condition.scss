@@ -1,0 +1,39 @@
+.condition-right {
+  margin-bottom: 25px;
+  padding-left: 25px;
+  i {
+    font-size: $fs-3;
+    color: $color-red-1;
+    margin-right: $mg-1;
+  }
+  .condition-right__item--content {
+    h4 {
+      color: $color-blue-1;
+      font-weight: $fw-2;
+      font-size: 21px;
+      margin-top: 0;
+    }
+    p {
+      font-size: 14px;
+      color: $color-gray-0;
+      line-height: 1.5;
+      margin-bottom: $mg-1;
+      text-align: justify;
+    }
+  }
+}
+
+
+@include responsive("small") {
+  .condition-right {
+    margin: 25px 0;
+    padding-left: 0;
+  }
+}
+
+@include responsive("medium") {
+  .condition-right {
+    margin: 25px 0;
+    padding-left: 0;
+  }
+}
